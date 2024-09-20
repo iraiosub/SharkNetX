@@ -1,12 +1,18 @@
 Package: SharkNetX
-Title: What the Package Does (One Line, Title Case)
+Title: Tools for Network Subgraph Comparison and Analysis
 Version: 0.0.0.9000
 Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"),
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+    person("Ira", "Iosub", , "ira.iosub@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-2924-2471"))
+Description: Functions for comparing subgraphs formed by nodes of interest to randomized and degree-matched control networks, and calculating network metrics such as LCC, edge density, degree, and global clustering coefficient.
+License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.1
+Depends: R (>= 4.4)
+Suggests: devtools
+Imports:
+  igraph,
+  ggplot2,
+  cowplot,
+  digest
